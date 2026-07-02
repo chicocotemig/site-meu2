@@ -1,0 +1,189 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .fundo-pagina {
+    background-color: #a4bfa7; 
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 1000px;
+    text-align: center;
+  }
+  
+  .titulo-principal {
+    background-color: #609366;
+    color: #2b442e;
+    display: inline-block;
+    padding: 15px 60px;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    margin-bottom: 50px;
+    border-radius: 4px;
+  }
+  
+  
+  .grade-produtos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+    justify-items: center;
+  }
+  
+  .cartao-produto {
+    background-color: #ffffff;
+    border-radius: 4px;
+    width: 100%;
+    max-width: 300px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+  }
+  
+ 
+  .imagem-container {
+    position: relative;
+    background-color: #f9f9f9;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .imagem-produto {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+  }
+  
+  .tag {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 0.7rem;
+    font-weight: bold;
+    padding: 4px 10px;
+    border-radius: 20px;
+    color: white;
+  }
+  
+  .tag-laranja {
+    background-color: #d06d4c;
+  }
+  
+  .tag-desconto {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #2e5939;
+    color: white;
+    font-size: 0.7rem;
+    font-weight: bold;
+    padding: 4px 8px;
+    border-radius: 20px;
+  }
+  
+  .botao-favorito {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: white;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  .info-produto {
+    padding: 20px 15px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+  
+  .categoria {
+    font-size: 0.7rem;
+    color: #999;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .nome-produto {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 8px;
+    font-weight: normal;
+  }
+  
+  .avaliacao {
+    font-size: 0.85rem;
+    color: #999;
+    margin-bottom: 15px;
+  }
+  
+  .preco-container {
+    margin-top: auto;
+    margin-bottom: 15px;
+  }
+  
+  .preco-atual {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    margin-right: 8px;
+  }
+  
+  .preco-antigo {
+    font-size: 0.9rem;
+    color: #aaa;
+    text-decoration: line-through;
+  }
+  
+  .botoes-container {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+  }
+  
+  .botao-ver {
+    background: none;
+    border: 1px solid #ccc;
+    padding: 6px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    color: #666;
+    font-size: 0.85rem;
+  }
+  
+  .botao-ver:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .botao-carrinho {
+    background-color: #3b5f43;
+    border: none;
+    color: white;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .botao-carrinho:hover {
+    background-color: #2b4532;
+  }
